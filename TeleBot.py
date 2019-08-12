@@ -38,7 +38,6 @@ def Case_of_Move(message):
 		rain_s = w.get_detailed_status()
 		bot.send_message(message.from_user.id, rain_s)
 		bot.send_message(message.from_user.id, rain_Level(rain_s))
-		rain_s1 = w.get_status()
 	elif ch =="/wind":
 		wnd = w.get_wind()
 		bot.send_message(message.from_user.id, wind_Level(wnd['speed']))
